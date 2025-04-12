@@ -8,7 +8,7 @@ import Register from './pages/Register';
 import Settings from './pages/Settings';
 import ProtectedRoute from './components/ProtectedRoute';
 
-export default function App() {
+const App: React.FC = () => {
   const { theme } = useTheme();
 
   return (
@@ -24,4 +24,6 @@ export default function App() {
       </Routes>
     </div>
   );
-}
+};
+
+export default App;
