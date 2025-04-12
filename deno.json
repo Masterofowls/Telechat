@@ -1,0 +1,14 @@
+{
+  "tasks": {
+    "dev": "deno run --allow-net --allow-read --allow-env --allow-sys src/server/main.ts",
+    "build": "deno run --allow-read --allow-write --allow-env scripts/build.ts",
+    "install": "deno cache src/**/*.ts"
+  },
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
+    "lib": ["dom", "dom.iterable", "esnext", "deno.ns"],
+    "strict": true,
+    "allowJs": true
+  }
+}
